@@ -1,10 +1,44 @@
 [gd_scene format=3 uid="uid://bed852rpjflmq"]
 
-[ext_resource type="Texture2D" uid="uid://20hkhmvjth5f" path="res://icon.svg" id="1_yqeox"]
+[ext_resource type="FontFile" uid="uid://pijuoadb6ucd" path="res://assets/font.png" id="1_yqeox"]
+
+[sub_resource type="FontVariation" id="FontVariation_vjb58"]
+base_font = ExtResource("1_yqeox")
+spacing_glyph = -1
 
 [node name="Node2D" type="Node2D" unique_id=1054363696]
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1933934551]
-position = Vector2(320, 180.00002)
-scale = Vector2(5, 2.8125002)
-texture = ExtResource("1_yqeox")
+[node name="Button2" type="Button" parent="." unique_id=1606943389]
+offset_left = 10.0
+offset_top = 63.0
+offset_right = 80.0
+offset_bottom = 94.0
+text = "Settingz
+"
+
+[node name="Label" type="Label" parent="." unique_id=281540659]
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 217.0
+offset_bottom = 31.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = SubResource("FontVariation_vjb58")
+theme_override_font_sizes/font_size = 16
+text = "Pocket Force 0.1"
+
+[node name="Button" type="Button" parent="." unique_id=1172742758]
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 157.0
+offset_bottom = 61.0
+text = "single/multiplayer"
+
+[node name="Button3" type="Button" parent="." unique_id=1001893737]
+offset_left = 294.0
+offset_right = 312.0
+offset_bottom = 31.0
+text = "X
+"
